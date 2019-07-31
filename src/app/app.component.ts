@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { uniq } from 'ramda';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './app.tpl.pug',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
