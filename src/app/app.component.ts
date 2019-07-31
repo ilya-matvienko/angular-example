@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { uniq } from 'ramda';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +7,15 @@ import { uniq } from 'ramda';
 })
 export class AppComponent {
   title = 'Router';
+
+  menuItems = [
+    {
+      title: 'Sign In',
+      src: 'sign-in',
+    },
+    {
+      title: 'Admin',
+      src: 'admin',
+    },
+  ];
 }

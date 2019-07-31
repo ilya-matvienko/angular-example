@@ -1,0 +1,20 @@
+form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+input {
+  border: 1px solid rebeccapurple;
+  padding-top: 0;
+}
+button {
+  width: 100%;
+  padding: 2px 7px;
+  color: rebeccapurple;
+  border: 2px dashed rebeccapurple;
+}
+button[disabled] {
+  color: grey;
+  border-color: grey;
+}
