@@ -1,15 +1,17 @@
-import {Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'admin',
   templateUrl: 'admin.tpl.pug',
+  styleUrls: ['admin.scss'],
 })
 
-export class AdminController implements OnInit {
-  constructor() {
-  }
+export class AdminController {
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
-  ngOnInit() {
-    console.warn('ЕЩЕ ОДИН ХУЙ');
+  signOut() {
+    localStorage.removeItem('authorize');
+    this.router.navigate(['/sign-in'], { relativeTo: this.route });
   }
 }
