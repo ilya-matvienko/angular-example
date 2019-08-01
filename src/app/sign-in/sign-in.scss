@@ -13,6 +13,13 @@ button {
   padding: 2px 7px;
   color: rebeccapurple;
   border: 2px dashed rebeccapurple;
+  cursor: pointer;
+
+  &.fb {
+    color: grey;
+    border: 2px dashed rebeccapurple;
+    width: 100px;
+  }
 }
 button[disabled] {
   color: grey;

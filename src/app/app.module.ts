@@ -18,7 +18,6 @@ import { AdminModule } from './admin/admin.module';
     SignInModule,
     AdminModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

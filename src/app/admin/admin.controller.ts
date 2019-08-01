@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+
+import { fire } from '../firewatch/firewatch';
 
 @Component({
-  selector: 'admin',
   templateUrl: 'admin.tpl.pug',
   styleUrls: ['admin.scss'],
 })
 
 export class AdminController {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   signOut() {
-    localStorage.removeItem('authorize');
     this.router.navigate(['/sign-in'], { relativeTo: this.route });
+    fire('logOut');
   }
 }

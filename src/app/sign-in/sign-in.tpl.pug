@@ -8,3 +8,6 @@ form([formGroup]="form", (submit)="onSubmit()")
   br
   br
   button {{ 'Sign in' }}
+
+p
+  button.fb((click)="facebookCheckStatus()")  {{ 'Login with facebook' }}
