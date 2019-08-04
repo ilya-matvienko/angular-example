@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { fire } from '../firewatch/firewatch';
+import { fire } from 'modules/firewatch';
 
 @Component({
   templateUrl: 'admin.tpl.pug',
