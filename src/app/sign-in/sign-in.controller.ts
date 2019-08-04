@@ -2,7 +2,7 @@ import { Component, NgZone, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { watch } from '../firewatch/firewatch';
+import { watch } from '../../modules/firewatch/firewatch';
 
 declare const FB;
 
